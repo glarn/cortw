@@ -39,7 +39,7 @@ node server.js
 
 4. si sale `Servidor listo en http://localhost:4000` ya esta, abre ese link en el navegador
 
-![terminales con tailwind y el servidor corriendo](img/readme-terminal.png)
+![terminales con tailwind y el servidor corriendo](readme-terminal.png)
 
 > no abras el `index.html` con doble click, la pagina necesita el servidor para cargar las fotos y guardar las cotizaciones
 
