@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cortes Construction &amp; Tree Service LLC | Kansas City</title>
+    <meta
+      name="description"
+      content="Licensed construction, tree services, landscaping in Kansas City. Call 913-689-8645."
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preload" href="img/hero.jpg" as="image" />
+    <link
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+  document.documentElement.dataset.theme =
+    localStorage.getItem('theme') ||
+    (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+</script>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+    <div class="page-loader" id="pageLoader">
+      <div
+        class="loader-logo"
+        style="
+          color: var(--green-bright);
+          font-family: &quot;Instrument Serif&quot;, serif;
+          font-size: 1.5rem;
+          letter-spacing: 0.1em;
+        "
+      >
+        GC
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-brand">
+          <span class="logo-gc">GC</span>
+          <div class="nav-name">
+            Cortes Construction
+            <span>&amp; Tree Service LLC</span>
+          </div>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" onclick="closeM()">Home</a></li>
+          <li><a href="#about" onclick="closeM()">About</a></li>
+          <li><a href="#services" onclick="closeM()">Services</a></li>
+          <li><a href="#gallery" onclick="closeM()">Portfolio</a></li>
+          <li class="nav-cta-wrap"><a href="#contact" onclick="closeM()">Get Estimate</a></li>
+        </ul>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+          </svg>
+        </button>
+        <button class="ham" id="ham" onclick="togM()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="hero-bg"><img id="heroBg" alt="Project" /></div>
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-content">
+        <div class="hero-upper">
+          <div class="hero-logo-display"><span class="logo-gc">GC</span></div>
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-line"></span>
+            <span class="hero-eyebrow-text">Licensed &amp; Insured &bull; Family Owned Since 2017</span>
+          </div>
+          <h1>
+            <span class="text-reveal"><span class="text-reveal-inner">Building in Kansas City.</span></span>
+            <br />
+            <span class="text-reveal text-reveal-d2">
+              <span class="text-reveal-inner"><i>Since 2017.</i></span>
+            </span>
+          </h1>
+          <p class="hero-desc">
+            We do construction, tree work and landscaping for families all over Kansas City. Call us or ask for a
+            free estimate.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="hero-btn hero-btn-primary">
+              Get Free Estimate
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="tel:9136898645" class="hero-btn hero-btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"
+                />
+              </svg>
+              913-689-8645
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-bar">
+      <div class="trust-bar-inner">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div>
+            <div class="trust-num">100%</div>
+            <div class="trust-label">Licensed &amp; Insured</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div>
+            <div class="trust-num">8+</div>
+            <div class="trust-label">Years in Business</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87" />
+              <path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <div>
+            <div class="trust-num">Family</div>
+            <div class="trust-label">Owned &amp; Operated</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+          </div>
+          <div>
+            <div class="trust-num">24/7</div>
+            <div class="trust-label">Emergency Service</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-frame"></div>
+            <div class="about-frame-2"></div>
+            <div class="about-img"><img id="aboutImg" alt="Team" loading="lazy" /></div>
+            <div class="about-badge">
+              <strong>8+</strong>
+              <span>Years</span>
+            </div>
+          </div>
+          <div class="about-body reveal reveal-d1">
+            <div class="s-tag">About Us</div>
+            <h2>
+              Built by
+              <i>Family,</i>
+              <br />
+              Based in KC
+            </h2>
+            <p>
+              Laura Gonzalez and Fernando Cortes started the company in 2017. We treat every job like it's our own
+              house.
+            </p>
+            <p>
+              We frame shops, take down big oaks and redo backyards. We show up, do the job and stand behind it.
+              Licensed and insured.
+            </p>
+            <div class="about-highlights">
+              <div class="about-hi">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                <span>Licensed &amp; Insured</span>
+              </div>
+              <div class="about-hi">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                <span>Family Owned</span>
+              </div>
+              <div class="about-hi">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                <span>Free Estimates</span>
+              </div>
+              <div class="about-hi">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                <span>24/7 Emergency</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <div class="s-header reveal">
+          <div class="s-tag">Why Us</div>
+          <h2>Why Choose Us</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h4>Licensed &amp; Insured</h4>
+            <p>Licensed and insured.</p>
+          </div>
+          <div class="why-item reveal reveal-d1">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h4>One Team</h4>
+            <p>Construction, trees, landscaping.</p>
+          </div>
+          <div class="why-item reveal reveal-d2">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h4>Fast Response</h4>
+            <p>Quotes within 24 hours.</p>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                />
+              </svg>
+            </div>
+            <h4>Family Owned</h4>
+            <p>We treat every job like our own home.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="a-divider reveal"></div>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="s-header reveal">
+          <div class="s-tag">What We Do</div>
+          <h2>Our Services</h2>
+          <p>Construction, tree service and landscaping.</p>
+        </div>
+        <div class="svc-grid">
+          <div class="svc reveal">
+            <div class="svc-num">01</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
+              </svg>
+            </div>
+            <h3>Construction</h3>
+            <p>Custom builds, remodels, repairs.</p>
+            <div class="svc-tags">
+              <span>Decks</span>
+              <span>Fences</span>
+              <span>Shops</span>
+              <span>Remodels</span>
+              <span>Electrical</span>
+              <span>Plumbing</span>
+              <span>Tile</span>
+              <span>Flooring</span>
+            </div>
+            <div class="svc-toggle">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <div class="svc-expand">
+              <div class="svc-expand-inner">
+                <p>
+                  Residential and commercial. Custom shops, full remodels, deck builds, fence installations, tile,
+                  flooring, electrical, and plumbing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="svc reveal reveal-d1">
+            <div class="svc-num">02</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22V8M12 8C9 8 5 5 5 3c1 0 4 1 7 5C15 4 18 3 19 3c0 2-4 5-7 5z" />
+              </svg>
+            </div>
+            <h3>Tree Services</h3>
+            <p>24/7 emergency. Trimming to full removal.</p>
+            <div class="svc-tags">
+              <span>Removal</span>
+              <span>Trimming</span>
+              <span>Pruning</span>
+              <span>Canopy</span>
+              <span>Stumps</span>
+              <span>Storm</span>
+              <span>Emergency</span>
+            </div>
+            <div class="svc-toggle">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <div class="svc-expand">
+              <div class="svc-expand-inner">
+                <p>Canopy raising, top-down removal, stump grinding, power line clearance. Available 24/7.</p>
+              </div>
+            </div>
+          </div>
+          <div class="svc reveal reveal-d2">
+            <div class="svc-num">03</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22c-4 0-8-2-8-6 0-3 2-5 4-6 1-1 2-2 2-4 0 3 2 4 3 5 1 1 3 3 3 5 0 2-1 4-4 6z" />
+              </svg>
+            </div>
+            <h3>Landscaping</h3>
+            <p>Custom designs, seasonal care, installations.</p>
+            <div class="svc-tags">
+              <span>Mulch</span>
+              <span>Edging</span>
+              <span>Sod</span>
+              <span>Planting</span>
+              <span>Shrubs</span>
+              <span>Stone</span>
+              <span>Lawn Care</span>
+            </div>
+            <div class="svc-toggle">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+            <div class="svc-expand">
+              <div class="svc-expand-inner">
+                <p>
+                  Mulch, edging, sod, planting, shrub trimming, specialty rock, grading, seeding, and seasonal
+                  clean-ups.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="a-divider reveal"></div>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="s-header reveal">
+          <div class="s-tag">Our Work</div>
+          <h2>See Our Work</h2>
+          <p>Photos of our own jobs.</p>
+        </div>
+      </div>
+      <div class="reel-wrap reveal">
+        <div class="reel" id="reel"></div>
+        <div class="reel-hint">Drag to explore</div>
+      </div>
+    </section>
+    <div class="a-divider reveal"></div>
+
+    <section class="ba-section" id="beforeafter">
+      <div class="container">
+        <div class="ba-intro reveal">
+          <div class="ba-intro-text">
+            <div class="s-tag">Transformations</div>
+            <h2
+              style="
+                font-family: &quot;Instrument Serif&quot;, serif;
+                font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+                color: var(--white);
+                margin-bottom: 0.5rem;
+                font-weight: 400;
+              "
+            >
+              Before &amp; After:
+              <i style="color: var(--green-bright)">Front Yard</i>
+            </h2>
+            <p style="color: var(--text); font-size: 0.9rem; font-weight: 300; line-height: 1.6">
+              Full front yard landscaping job.
+            </p>
+          </div>
+          <div class="ba-dots" id="baDots"></div>
+        </div>
+        <div class="ba-projects" id="baProjects"></div>
+      </div>
+    </section>
+    <div class="a-divider reveal"></div>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="s-header reveal">
+          <div class="s-tag">Reviews</div>
+          <h2>What Our Clients Say</h2>
+        </div>
+        <div class="test-grid">
+          <div class="test-card reveal">
+            <div class="test-stars">
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+            </div>
+            <p class="test-quote">
+              "They built our shop from the ground up. Professional, fair pricing, ahead of schedule."
+            </p>
+            <div class="test-author">
+              <div class="test-avatar">M</div>
+              <div>
+                <div class="test-name">Marcus T.</div>
+                <div class="test-loc">Overland Park, KS</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card reveal reveal-d1">
+            <div class="test-stars">
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+            </div>
+            <p class="test-quote">
+              "Massive oak leaning toward our house after a storm. Same day response. Can't recommend enough."
+            </p>
+            <div class="test-author">
+              <div class="test-avatar">S</div>
+              <div>
+                <div class="test-name">Sarah K.</div>
+                <div class="test-loc">Leawood, KS</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card reveal reveal-d2">
+            <div class="test-stars">
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+              <span class="test-star">&#9733;</span>
+            </div>
+            <p class="test-quote">
+              "Complete bathroom remodel. The tile work and finishing is outstanding. True craftsmen."
+            </p>
+            <div class="test-author">
+              <div class="test-avatar">D</div>
+              <div>
+                <div class="test-name">David R.</div>
+                <div class="test-loc">Olathe, KS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="a-divider reveal"></div>
+
+    <section class="faq">
+      <div class="container">
+        <div class="s-header reveal">
+          <div class="s-tag">Questions</div>
+          <h2>Frequently Asked</h2>
+        </div>
+        <div class="faq-grid reveal">
+          <div class="faq-item">
+            <div class="faq-q" onclick="togFaq(this)">
+              <h4>Do you offer free estimates?</h4>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a"><p>Yes, 100% free, no obligation. Most quotes within 24 hours.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="togFaq(this)">
+              <h4>Are you licensed and insured?</h4>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a"><p>Fully licensed with comprehensive liability insurance.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="togFaq(this)">
+              <h4>What areas do you serve?</h4>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a"><p>Entire KC metro: Overland Park, Leawood, Olathe, Shawnee, and surrounding.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="togFaq(this)">
+              <h4>Emergency tree removal?</h4>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a"><p>24/7 emergency service. Storm damage, fallen trees, call anytime.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="togFaq(this)">
+              <h4>How does payment work?</h4>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a"><p>50% deposit on major projects. Balance on completion. Quotes valid 30 days.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="a-divider reveal"></div>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="s-header reveal">
+          <div class="s-tag">Get In Touch</div>
+          <h2>Get a Quote</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Contact Us</h3>
+            <p>Tell us what you need and we'll get back to you.</p>
+            <div class="contact-urgency">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>Most quotes within 24 hours</span>
+            </div>
+            <div class="c-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="c-label">Phone</div>
+                <div class="c-val"><a href="tel:9136898645">913-689-8645</a></div>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <div class="c-label">Email</div>
+                <div class="c-val"><a href="mailto:cortestreeservice6@gmail.com">cortestreeservice6@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div class="c-label">Service Area</div>
+                <div class="c-val">Leawood, Olathe, Shawnee, Overland Park &amp; KC Metro</div>
+              </div>
+            </div>
+          </div>
+          <div class="c-form reveal reveal-d1">
+            <form id="quoteForm" action="https://formspree.io/f/mzdklzgg" method="POST">
+              <input type="hidden" name="_subject" value="New Quote Request" />
+              <input type="text" name="_gotcha" style="display: none" tabindex="-1" autocomplete="off" />
+              <h4>Request Your Quote</h4>
+              <p class="form-sub">Tell us about your project.</p>
+              <div class="f-row">
+                <div class="f-g">
+                  <label>Name</label>
+                  <input type="text" name="name" placeholder="Full name" required autocomplete="name" id="fName" />
+                  <span class="f-error">Please enter your name</span>
+                  <svg class="f-icon-valid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M20 6L9 17l-5-5" /></svg
+                  ><svg class="f-icon-invalid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                  </svg>
+                </div>
+                <div class="f-g">
+                  <label>Phone</label>
+                  <input type="tel" name="phone" placeholder="(555) 123-4567" required autocomplete="tel" id="fPhone" />
+                  <span class="f-error">Enter a valid phone number</span>
+                  <svg class="f-icon-valid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M20 6L9 17l-5-5" /></svg
+                  ><svg class="f-icon-invalid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                  </svg>
+                </div>
+              </div>
+              <div class="f-row">
+                <div class="f-g">
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="email@example.com" autocomplete="email" id="fEmail" />
+                  <span class="f-error">Enter a valid email</span>
+                  <svg class="f-icon-valid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M20 6L9 17l-5-5" /></svg
+                  ><svg class="f-icon-invalid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                  </svg>
+                </div>
+                <div class="f-g">
+                  <label>Location</label>
+                  <input
+                    type="text"
+                    name="location"
+                    placeholder="City or address"
+                    autocomplete="address-level2"
+                    id="fLoc"
+                  />
+                  <span class="f-error">Enter a location</span>
+                  <svg class="f-icon-valid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M20 6L9 17l-5-5" /></svg
+                  ><svg class="f-icon-invalid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                  </svg>
+                </div>
+              </div>
+              <span class="f-checks-label">Tree Services</span>
+              <div class="f-checks">
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Tree Removal" />
+                  <span class="bx"></span>
+                  Tree Removal
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Tree Trimming" />
+                  <span class="bx"></span>
+                  Tree Trimming
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Pruning" />
+                  <span class="bx"></span>
+                  Pruning
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Stump Grinding" />
+                  <span class="bx"></span>
+                  Stump Grinding
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Raise Canopy" />
+                  <span class="bx"></span>
+                  Raise Canopy
+                </label>
+              </div>
+              <span class="f-checks-label">Landscaping</span>
+              <div class="f-checks">
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Mulch" />
+                  <span class="bx"></span>
+                  Mulch
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Sod" />
+                  <span class="bx"></span>
+                  Sod / Seeding
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Planting" />
+                  <span class="bx"></span>
+                  Planting / Shrubs
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Clean Up" />
+                  <span class="bx"></span>
+                  Clean Up
+                </label>
+              </div>
+              <span class="f-checks-label">Construction</span>
+              <div class="f-checks">
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Fence" />
+                  <span class="bx"></span>
+                  Fence / Repair
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Deck" />
+                  <span class="bx"></span>
+                  Deck / Repair
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Remodel" />
+                  <span class="bx"></span>
+                  Remodel
+                </label>
+                <label class="f-chk">
+                  <input type="checkbox" name="svc[]" value="Custom" />
+                  <span class="bx"></span>
+                  Custom Build
+                </label>
+              </div>
+              <div class="f-g">
+                <label>Details</label>
+                <textarea name="details" placeholder="Describe your project..."></textarea>
+              </div>
+              <button class="f-submit" type="submit" id="submitBtn">Submit Request</button>
+            </form>
+            <div id="formOk" style="display: none; text-align: center; padding: 2rem 0">
+              <p style="font-family: &quot;Instrument Serif&quot;, serif; font-size: 1.3rem; color: var(--white)">
+                Thanks, we got your request
+              </p>
+              <p style="color: var(--text); font-size: 0.85rem">We'll respond within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <button class="egg" id="egg" aria-label="Surprise">
+        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="11" r="2" /><circle cx="9" cy="6" r="2" /><circle cx="15" cy="6" r="2" /><circle cx="19" cy="11" r="2" /><path d="M12 12c-3 0-6 3-6 6 0 2 1.5 3 3 3 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.5 0 3-1 3-3 0-3-3-6-6-6z" /></svg>
+      </button>
+      <div class="container">
+        <div class="footer-inner">
+          <div><span class="logo-gc">GC</span></div>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026
+          <span>Cortes Construction &amp; Tree Service LLC</span>
+          . All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <div class="sticky-cta">
+      <div class="sticky-cta-inner">
+        <a href="tel:9136898645" class="sticky-cta-call">&#9742; Call Now</a>
+        <a href="#contact" class="sticky-cta-form">Free Estimate</a>
+      </div>
+    </div>
+    <button class="btt" id="btt" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6" /></svg>
+    </button>
+    <div class="lb" id="lb" onclick="closeLb()">
+      <button class="lb-x">&times;</button>
+      <img id="lbImg" alt="" />
+    </div>
+    <div class="egg-modal" id="eggModal"><img id="eggImg" alt="" style="opacity: 1" /></div>
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var btn = document.getElementById('themeBtn');
+        btn.addEventListener('click', function () {
+          var next = root.dataset.theme === 'light' ? 'dark' : 'light';
+          root.dataset.theme = next;
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+        var egg = document.getElementById('egg');
+        var modal = document.getElementById('eggModal');
+        var eggImg = document.getElementById('eggImg');
+        egg.addEventListener('click', function () {
+          eggImg.src = 'img/pug.gif';
+          modal.classList.add('on');
+        });
+        function closeEgg() { modal.classList.remove('on'); eggImg.removeAttribute('src'); }
+        modal.addEventListener('click', closeEgg);
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeEgg(); });
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

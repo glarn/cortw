@@ -1,0 +1,115 @@
+{
+  "projects": [
+    {
+      "file": "IMG_0318.jpeg",
+      "title": "Post-Frame Shop",
+      "sub": "Foundation to roof",
+      "cat": "Construction"
+    },
+    {
+      "file": "IMG_0315.jpeg",
+      "title": "Structure Framing",
+      "sub": "Roof beams",
+      "cat": "Construction",
+      "portrait": true
+    },
+    {
+      "file": "IMG_0325.jpeg",
+      "title": "Site Excavation",
+      "sub": "Foundation prep",
+      "cat": "Construction",
+      "portrait": true
+    },
+    {
+      "file": "IMG_0340.jpeg",
+      "title": "Metal Siding",
+      "sub": "Exterior walls",
+      "cat": "Construction"
+    },
+    {
+      "file": "IMG_0358.jpeg",
+      "title": "Roof Framing",
+      "sub": "Rafters and ridge",
+      "cat": "Construction"
+    },
+    {
+      "file": "IMG_0362.jpeg",
+      "title": "Open Bay Workshop",
+      "sub": "Metal roof complete",
+      "cat": "Construction"
+    },
+    {
+      "file": "IMG_0398.jpeg",
+      "title": "Shop Interior",
+      "sub": "Sheathing and storage",
+      "cat": "Construction"
+    },
+    {
+      "file": "IMG_0399.jpeg",
+      "title": "Electrical & Doors",
+      "sub": "Panel and bench",
+      "cat": "Construction"
+    },
+    {
+      "file": "IMG_0396.jpeg",
+      "title": "Storage Room",
+      "sub": "Built-in shelving",
+      "cat": "Construction"
+    },
+    {
+      "file": "IMG_1032.jpeg",
+      "title": "Bathroom Before",
+      "sub": "Gutted to studs",
+      "cat": "Remodel",
+      "portrait": true
+    },
+    {
+      "file": "IMG_1065.jpeg",
+      "title": "Bathroom After",
+      "sub": "Glass shower, vanity",
+      "cat": "Remodel",
+      "portrait": true
+    },
+    {
+      "file": "IMG_1530.jpeg",
+      "title": "Tree Removal",
+      "sub": "Stump ground flush",
+      "cat": "Tree Service",
+      "portrait": true
+    }
+  ],
+  "beforeAfter": [
+    {
+      "title": "Front Yard",
+      "desc": "Bare dirt to finished beds",
+      "before": "BEFORE5.jpg",
+      "beforeCap": "Bare dirt",
+      "after": "AFTER4.jpg",
+      "afterCap": "Mulch, rock, plants"
+    },
+    {
+      "title": "Side Yard",
+      "desc": "Weed barrier and grasses",
+      "before": "BEFORE6.jpg",
+      "beforeCap": "Fabric laid",
+      "after": "AFTER3.jpg",
+      "afterCap": "Ornamental grasses"
+    },
+    {
+      "title": "Rock Pathway",
+      "desc": "Curved rock border",
+      "before": "BEFORE4.jpg",
+      "beforeCap": "In progress",
+      "after": "AFTER2.jpg",
+      "afterCap": "Finished walkway"
+    },
+    {
+      "title": "Full Property",
+      "desc": "Complete transformation",
+      "before": "BEFORE7.jpg",
+      "beforeCap": "Rock border started",
+      "after": "AFTER1.jpg",
+      "afterCap": "Complete"
+    }
+  ]
+}
