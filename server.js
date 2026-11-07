@@ -2,13 +2,13 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const Database = require("better-sqlite3");
+const { DatabaseSync } = require("node:sqlite");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// base de datos SQLite: se guarda en el archivo quotes.db dentro del proyecto
-const db = new Database(path.join(__dirname, "quotes.db"));
+// base de datos SQLite (viene incluida en node, no hay que instalar nada): se guarda en el archivo quotes.db dentro del proyecto
+const db = new DatabaseSync(path.join(__dirname, "quotes.db"));
 db.exec(`
   CREATE TABLE IF NOT EXISTS quotes (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,

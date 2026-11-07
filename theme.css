@@ -1,4 +1,5 @@
 /* theme: light mode (cargar DESPUES de styles.css) */
+
 /* contraste modo oscuro (tema oscuro = :root) */
 :root{--bg-card:#19211d;--text:#bab6ad;--text-dim:#8f8c84;--cream2:#d8d3c9}
 .svc-num{color:rgba(82,160,110,.22)}
@@ -12,7 +13,8 @@
 .f-g input,.f-g textarea{border-color:rgba(232,228,220,.2)}
 .f-chk .bx{border-color:rgba(232,228,220,.35)}
 
-[data-theme="light"]{--bg:#f7f5f0;--bg2:#eeebe3;--bg-card:#ffffff;--green:#2f7fc1;--green-mid:#4a97d6;--green-bright:#2f86c8;--green-pale:#2a6fa8;--green-glow:rgba(47,134,200,.1);--gold:#9a7b3f;--gold-light:#7d6230;--cream:#1c211e;--cream2:#3a413c;--text:#3f443f;--text-dim:#5f635d;--white:#111613}
+/* colores modo claro (verde de arriba pasa a azul, mas oscuro para que se lea) */
+[data-theme="light"]{--bg:#f7f5f0;--bg2:#eeebe3;--bg-card:#ffffff;--green:#2872b0;--green-mid:#2f7ab8;--green-bright:#1f6fae;--green-pale:#1d5f94;--green-glow:rgba(47,134,200,.1);--gold:#9a7b3f;--gold-light:#6e5527;--cream:#1c211e;--cream2:#333a35;--text:#383d38;--text-dim:#52564f;--white:#111613}
 
 /* toggle button */
 .theme-btn{width:36px;height:36px;margin-left:1rem;background:none;border:1px solid rgba(128,128,128,.25);border-radius:50%;cursor:pointer;display:grid;place-items:center;font-size:1rem;line-height:1;color:var(--cream);transition:all .3s;flex-shrink:0}
@@ -25,7 +27,7 @@
 .nav-menu{margin-left:auto}
 body{transition:background .3s,color .3s}
 
-/* zonas que siempre quedan oscuras (hero nav sin pin overlays) */
+/* zonas que siempre quedan oscuras (hero, nav sin pin, overlays) */
 [data-theme="light"] .hero,
 [data-theme="light"] .nav:not(.pinned),
 [data-theme="light"] .reel-card-info,
@@ -35,33 +37,21 @@ body{transition:background .3s,color .3s}
 [data-theme="light"] .lb{--white:#f5f3ef;--cream:#e8e4dc;--cream2:#c8c3b9;--text:#c8c3b9;--text-dim:#8c8a84;--green-bright:#6bb4e8;--green-pale:#a8d4f5}
 
 /* nav pinned */
-[data-theme="light"] .nav.pinned{background:rgba(247,245,240,.92);border-bottom-color:rgba(47,134,200,.18)}
+[data-theme="light"] .nav.pinned{background:rgba(247,245,240,.94);border-bottom-color:rgba(47,134,200,.18)}
 
-/* texto claro sobre fondos verdes */
+/* texto claro sobre fondos azules */
 [data-theme="light"] .nav-cta-wrap a,
 [data-theme="light"] .hero-btn-primary,
 [data-theme="light"] .f-submit,
 [data-theme="light"] .sticky-cta-call,
 [data-theme="light"] .btt,
 [data-theme="light"] .ba-compare::before,
-[data-theme="light"] .faq-item.open .faq-icon,
-[data-theme="light"] ::selection{color:#f5f3ef!important}
-[data-theme="light"] .nav-cta-wrap a{color:#f5f3ef!important}
+[data-theme="light"] .faq-item.open .faq-icon{color:#f5f3ef!important}
+[data-theme="light"] ::selection{background:var(--green);color:#f5f3ef}
 
-/* sticky cta */
+/* sticky cta y lightbox */
 [data-theme="light"] .sticky-cta{background:rgba(247,245,240,.96);border-top-color:rgba(47,134,200,.2);box-shadow:0 -4px 20px rgba(0,0,0,.08)}
-
-/* lightbox close */
 [data-theme="light"] .lb-x{color:#e8e4dc}
-
-/* bordes e inputs en claro */
-[data-theme="light"] .f-g input,[data-theme="light"] .f-g textarea{border-color:rgba(28,33,30,.15)}
-[data-theme="light"] .f-chk .bx{border-color:rgba(28,33,30,.25)}
-[data-theme="light"] .reel-arrows button,[data-theme="light"] .ba-nav button{background:rgba(28,33,30,.04);border-color:rgba(28,33,30,.12)}
-[data-theme="light"] .reel-progress,[data-theme="light"] .ba-dot{background:rgba(28,33,30,.1)}
-[data-theme="light"] .ba-dot.on{background:var(--green-bright)}
-[data-theme="light"] .footer-copy{border-top-color:rgba(28,33,30,.08)}
-[data-theme="light"] .hero-btn-secondary{border-color:rgba(232,228,220,.3)}
 
 /* mobile: menu lateral siempre oscuro */
 @media(max-width:768px){
@@ -70,32 +60,71 @@ body{transition:background .3s,color .3s}
 .theme-btn{margin-left:auto;margin-right:.5rem}
 }
 
-/* azul cielo en modo claro: tintes que estaban hardcodeados en verde */
+/* bordes y fondos en modo claro (tinte azul) */
 [data-theme="light"] section::before{background:linear-gradient(90deg,transparent,rgba(47,134,200,.18),transparent)}
 [data-theme="light"] .trust-bar{border-top-color:rgba(47,134,200,.18);border-bottom-color:rgba(47,134,200,.1)}
 [data-theme="light"] .trust-item{border-right-color:rgba(47,134,200,.1)}
 [data-theme="light"] .ticker{border-bottom-color:rgba(47,134,200,.1)}
-[data-theme="light"] .about-hi{background:rgba(47,134,200,.05);border-color:rgba(47,134,200,.12)}
-[data-theme="light"] .about-hi:hover{background:rgba(47,134,200,.1)}
+[data-theme="light"] .about-hi,[data-theme="light"] .c-item{background:rgba(47,134,200,.05);border-color:rgba(47,134,200,.25)}
+[data-theme="light"] .about-hi:hover,[data-theme="light"] .c-item:hover{background:rgba(47,134,200,.1)}
 [data-theme="light"] .why-icon{border-color:rgba(47,134,200,.18)}
 [data-theme="light"] .why-item:hover .why-icon{background:rgba(47,134,200,.18);box-shadow:0 8px 25px rgba(47,134,200,.2)}
-[data-theme="light"] .svc,[data-theme="light"] .test-card,[data-theme="light"] .ba-info{border-color:rgba(47,134,200,.14)}
-[data-theme="light"] .svc:hover,[data-theme="light"] .test-card:hover{border-color:rgba(47,134,200,.35)}
-[data-theme="light"] .svc-num{color:rgba(47,134,200,.1)}
-[data-theme="light"] .svc-tags span{background:rgba(47,134,200,.08)}
+[data-theme="light"] .svc,[data-theme="light"] .test-card,[data-theme="light"] .ba-info,[data-theme="light"] .c-form{border-color:rgba(47,134,200,.28)}
+[data-theme="light"] .svc:hover,[data-theme="light"] .test-card:hover{border-color:rgba(47,134,200,.45)}
+[data-theme="light"] .svc-num{color:rgba(47,134,200,.28)}
+[data-theme="light"] .svc-tags span{background:rgba(47,134,200,.13)}
 [data-theme="light"] .svc-expand-inner{border-top-color:rgba(47,134,200,.15)}
-[data-theme="light"] .faq-item{border-bottom-color:rgba(47,134,200,.15)}
-[data-theme="light"] .faq-icon{border-color:rgba(47,134,200,.3)}
-[data-theme="light"] .c-item{background:rgba(47,134,200,.05);border-color:rgba(47,134,200,.12)}
-[data-theme="light"] .c-item:hover{background:rgba(47,134,200,.1)}
-[data-theme="light"] .c-form{border-color:rgba(47,134,200,.18)}
-[data-theme="light"] .f-g input:focus,[data-theme="light"] .f-g textarea:focus{border-color:var(--green-mid);box-shadow:0 0 0 3px rgba(47,134,200,.12)}
-[data-theme="light"] .f-g.valid input,[data-theme="light"] .f-g.valid textarea{border-color:rgba(47,134,200,.45)}
+[data-theme="light"] .faq-item{border-bottom-color:rgba(47,134,200,.28)}
+[data-theme="light"] .faq-icon{border-color:rgba(47,134,200,.4)}
 [data-theme="light"] footer{border-top-color:rgba(47,134,200,.15)}
+[data-theme="light"] .footer-copy{border-top-color:rgba(28,33,30,.1)}
 [data-theme="light"] .svc:hover,[data-theme="light"] .test-card:hover,[data-theme="light"] .c-item:hover,[data-theme="light"] .about-hi:hover,[data-theme="light"] .why-item:hover{box-shadow:0 12px 40px rgba(47,134,200,.14),0 0 0 1px rgba(47,134,200,.12)}
 [data-theme="light"] .particle{background:rgba(107,180,232,.4)}
 [data-theme="light"] .reel-card-tag,[data-theme="light"] .ba-side-tag.after{background:rgba(47,134,200,.55)}
-[data-theme="light"] ::selection{background:var(--green);color:#f5f3ef}
+
+/* inputs y botones chicos en modo claro */
+[data-theme="light"] .f-g input,[data-theme="light"] .f-g textarea{border-color:rgba(28,33,30,.3)}
+[data-theme="light"] .f-g input:focus,[data-theme="light"] .f-g textarea:focus{border-color:var(--green-mid);box-shadow:0 0 0 3px rgba(47,134,200,.15)}
+[data-theme="light"] .f-g.valid input,[data-theme="light"] .f-g.valid textarea{border-color:rgba(47,134,200,.55)}
+[data-theme="light"] .f-chk .bx{border-color:rgba(28,33,30,.4)}
+[data-theme="light"] .reel-arrows button,[data-theme="light"] .ba-nav button{background:rgba(28,33,30,.04);border-color:rgba(28,33,30,.15)}
+[data-theme="light"] .reel-progress,[data-theme="light"] .ba-dot{background:rgba(28,33,30,.12)}
+[data-theme="light"] .ba-dot.on{background:var(--green-bright)}
+[data-theme="light"] .hero-btn-secondary{border-color:rgba(232,228,220,.35)}
+[data-theme="light"] .reel-card{background:#141a17}
+[data-theme="light"] .reel-hint{opacity:1;color:var(--text)}
+
+/* legibilidad modo claro: texto mas grueso (el 300 se ve muy flaco en fondo claro) */
+[data-theme="light"] .about-body p,
+[data-theme="light"] .svc>p,
+[data-theme="light"] .svc-expand-inner p,
+[data-theme="light"] .why-item p,
+[data-theme="light"] .s-header p,
+[data-theme="light"] .test-quote,
+[data-theme="light"] .faq-a p,
+[data-theme="light"] .contact-info>p,
+[data-theme="light"] .c-form .form-sub,
+[data-theme="light"] .ba-info-left p{font-weight:400}
+
+/* legibilidad modo claro: textos chiquitos un poco mas grandes */
+[data-theme="light"] .s-tag,
+[data-theme="light"] .trust-label,
+[data-theme="light"] .f-g label,
+[data-theme="light"] .f-checks-label,
+[data-theme="light"] .svc-toggle{font-size:.72rem}
+[data-theme="light"] .c-label,
+[data-theme="light"] .reel-hint,
+[data-theme="light"] .test-loc,
+[data-theme="light"] .ba-info-left p{font-size:.72rem}
+[data-theme="light"] .svc-tags span{font-size:.72rem}
+[data-theme="light"] .footer-links a,
+[data-theme="light"] .footer-copy{font-size:.74rem}
+
+/* legibilidad modo claro: errores en rojo mas oscuro */
+[data-theme="light"] .f-error,
+[data-theme="light"] .f-g.invalid .f-icon-invalid{color:#b3261e}
+[data-theme="light"] .f-error{font-size:.68rem}
+[data-theme="light"] .f-g.invalid input,[data-theme="light"] .f-g.invalid textarea{border-color:rgba(179,38,30,.6)}
 
 /* pug dnce */
 .egg{position:absolute;left:1.2rem;bottom:1rem;width:14px;height:14px;padding:0;background:none;border:none;color:var(--text-dim);opacity:.22;cursor:pointer;transition:opacity .3s,transform .3s;z-index:2}
@@ -105,18 +134,5 @@ body{transition:background .3s,color .3s}
 .egg-modal.on{display:flex}
 .egg-modal img{max-width:min(420px,85vw);max-height:80vh;border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.5)}
 
-/* contraste modo claro */
-[data-theme="light"] .svc-num{color:rgba(47,134,200,.28)}
-[data-theme="light"] .reel-card{background:#141a17}
-[data-theme="light"] .reel-hint{opacity:1;color:var(--text)}
-
-/* bordes mas marcados en modo claro */
-[data-theme="light"] .svc,[data-theme="light"] .test-card,[data-theme="light"] .ba-info,[data-theme="light"] .c-form{border-color:rgba(47,134,200,.28)}
-[data-theme="light"] .c-item,[data-theme="light"] .about-hi{border-color:rgba(47,134,200,.25)}
-[data-theme="light"] .svc-tags span{background:rgba(47,134,200,.13)}
-[data-theme="light"] .faq-item{border-bottom-color:rgba(47,134,200,.28)}
-[data-theme="light"] .f-g input,[data-theme="light"] .f-g textarea{border-color:rgba(28,33,30,.3)}
-[data-theme="light"] .f-chk .bx{border-color:rgba(28,33,30,.4)}
-
-/* carrusel conti */
+/* carrusel continuo */
 .reel{scroll-snap-type:none!important}

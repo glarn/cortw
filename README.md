@@ -16,13 +16,12 @@ pagina web para una empresa familiar de construccion, tree service y landscaping
 
 ## como abrirlo
 
-necesitas tener [node.js](https://nodejs.org) instalado
+necesitas tener [node.js](https://nodejs.org) instalado (version 22.5 o mas nueva, la base de datos ya viene incluida en node y no hay que instalar nada extra)
 
 1. abre una terminal dentro de la carpeta del proyecto y corre esto (solo la primera vez):
 
 ```
 npm install
-npm install express better-sqlite3
 ```
 
 2. en una terminal deja corriendo tailwind (genera `dist/output.css`):
@@ -37,7 +36,7 @@ npm run dev
 node server.js
 ```
 
-4. si sale `Servidor listo en http://localhost:4000` ya esta, abre ese link en el navegador
+4. si sale `Servidor listo en http://localhost:4000` ya esta, abre ese link en el navegador (si tambien sale un aviso amarillo de `ExperimentalWarning: SQLite` es normal, no es un error)
 
 ![terminales con tailwind y el servidor corriendo](readme-terminal.png)
 
@@ -93,7 +92,7 @@ si sale `[]` es que todavia no ha llegado ninguna. esa ruta solo funciona desde 
 - html, css y javascript
 - tailwind css (se compila con npm)
 - node.js y express para el servidor
-- sqlite (con better-sqlite3) como base de datos
+- sqlite (viene incluido en node, se usa con `node:sqlite`) como base de datos
 - formspree para el aviso por correo
 - fetch para hablar con el servidor
 
