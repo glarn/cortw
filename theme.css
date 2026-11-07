@@ -1,6 +1,6 @@
-/* theme: light mode (cargar DESPUES de styles.css) */
+/* color horrible mode cargar despues de styles.css */
 
-/* contraste modo oscuro (tema oscuro = :root) */
+/* contraste modo oscuro tema oscuro root */
 :root{--bg-card:#19211d;--text:#bab6ad;--text-dim:#8f8c84;--cream2:#d8d3c9}
 .svc-num{color:rgba(82,160,110,.22)}
 .svc,.test-card,.ba-info,.c-form{border-color:rgba(82,160,110,.22)}
@@ -13,7 +13,7 @@
 .f-g input,.f-g textarea{border-color:rgba(232,228,220,.2)}
 .f-chk .bx{border-color:rgba(232,228,220,.35)}
 
-/* colores modo claro (verde de arriba pasa a azul, mas oscuro para que se lea) */
+/* colores modo claro verde de arriba pasa a azul mas oscuro para que se lea */
 [data-theme="light"]{--bg:#f7f5f0;--bg2:#eeebe3;--bg-card:#ffffff;--green:#2872b0;--green-mid:#2f7ab8;--green-bright:#1f6fae;--green-pale:#1d5f94;--green-glow:rgba(47,134,200,.1);--gold:#9a7b3f;--gold-light:#6e5527;--cream:#1c211e;--cream2:#333a35;--text:#383d38;--text-dim:#52564f;--white:#111613}
 
 /* toggle button */
@@ -27,7 +27,7 @@
 .nav-menu{margin-left:auto}
 body{transition:background .3s,color .3s}
 
-/* zonas que siempre quedan oscuras (hero, nav sin pin, overlays) */
+/* zonas que siempre quedan oscuras hero nav sin pin overlays */
 [data-theme="light"] .hero,
 [data-theme="light"] .nav:not(.pinned),
 [data-theme="light"] .reel-card-info,
@@ -49,18 +49,18 @@ body{transition:background .3s,color .3s}
 [data-theme="light"] .faq-item.open .faq-icon{color:#f5f3ef!important}
 [data-theme="light"] ::selection{background:var(--green);color:#f5f3ef}
 
-/* sticky cta y lightbox */
+/* sticky cta y lightbo x */
 [data-theme="light"] .sticky-cta{background:rgba(247,245,240,.96);border-top-color:rgba(47,134,200,.2);box-shadow:0 -4px 20px rgba(0,0,0,.08)}
 [data-theme="light"] .lb-x{color:#e8e4dc}
 
-/* mobile: menu lateral siempre oscuro */
+/* celu menu lateral siempre oscuro */
 @media(max-width:768px){
 [data-theme="light"] .nav-menu{background:rgba(11,15,13,.98);--cream:#e8e4dc;--text:#c8c3b9;--green-bright:#6bb4e8}
 [data-theme="light"] .nav.pinned .nav-menu a:hover{color:#e8e4dc}
 .theme-btn{margin-left:auto;margin-right:.5rem}
 }
 
-/* bordes y fondos en modo claro (tinte azul) */
+/* bordes y fondos en modo claro tinte azul */
 [data-theme="light"] section::before{background:linear-gradient(90deg,transparent,rgba(47,134,200,.18),transparent)}
 [data-theme="light"] .trust-bar{border-top-color:rgba(47,134,200,.18);border-bottom-color:rgba(47,134,200,.1)}
 [data-theme="light"] .trust-item{border-right-color:rgba(47,134,200,.1)}
@@ -94,7 +94,7 @@ body{transition:background .3s,color .3s}
 [data-theme="light"] .reel-card{background:#141a17}
 [data-theme="light"] .reel-hint{opacity:1;color:var(--text)}
 
-/* legibilidad modo claro: texto mas grueso (el 300 se ve muy flaco en fondo claro) */
+/* legibilidad modo claro texto mas grueso el 300 se ve muy flaco en fondo claro */
 [data-theme="light"] .about-body p,
 [data-theme="light"] .svc>p,
 [data-theme="light"] .svc-expand-inner p,
@@ -106,7 +106,7 @@ body{transition:background .3s,color .3s}
 [data-theme="light"] .c-form .form-sub,
 [data-theme="light"] .ba-info-left p{font-weight:400}
 
-/* legibilidad modo claro: textos chiquitos un poco mas grandes */
+/* modo claro textos chiquitos un poco mas grandes */
 [data-theme="light"] .s-tag,
 [data-theme="light"] .trust-label,
 [data-theme="light"] .f-g label,
@@ -120,7 +120,7 @@ body{transition:background .3s,color .3s}
 [data-theme="light"] .footer-links a,
 [data-theme="light"] .footer-copy{font-size:.74rem}
 
-/* legibilidad modo claro: errores en rojo mas oscuro */
+/* modo claro errores en rojo mas oscuro */
 [data-theme="light"] .f-error,
 [data-theme="light"] .f-g.invalid .f-icon-invalid{color:#b3261e}
 [data-theme="light"] .f-error{font-size:.68rem}
@@ -134,5 +134,5 @@ body{transition:background .3s,color .3s}
 .egg-modal.on{display:flex}
 .egg-modal img{max-width:min(420px,85vw);max-height:80vh;border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.5)}
 
-/* carrusel continuo */
+/* carrusel conti */
 .reel{scroll-snap-type:none!important}
